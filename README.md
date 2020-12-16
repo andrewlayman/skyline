@@ -1,4 +1,4 @@
-Given a Github username and a year, renders a 3D model of their contribution chart. The data is fetched via a serverless function ([repo](https://github.com/martinwoodward/json-contributions) which also calculates distribution data).
+Given a GitHub username and a year, renders a 3D model of their contribution chart. The data is fetched via a serverless function ([repo](https://github.com/martinwoodward/json-contributions) which also calculates distribution data).
 
 ```
 ?username=<username>&year=<year>
