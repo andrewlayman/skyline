@@ -16,7 +16,7 @@ let year = "" + (new Date()).getFullYear()
 let json = {}
 let font = undefined
 let fontSize = 0.025
-let fontHeight = 0.00658 // Extrusion thickness
+let fontHeight = 0.00698 // Extrusion thickness
 
 let camera, scene, renderer
 let bronzeMaterial
@@ -104,7 +104,7 @@ const createText = () => {
 
   nameMesh.position.x = -0.295
   nameMesh.position.y = -0.075
-  nameMesh.position.z = -0.010
+  nameMesh.position.z = -0.012
 
   nameMesh.geometry.rotateX(FACE_ANGLE * Math.PI / 2)
   nameMesh.geometry.rotateY(Math.PI * 2)
@@ -115,7 +115,7 @@ const createText = () => {
 
   yearMesh.position.x = 0.280
   yearMesh.position.y = -0.075
-  yearMesh.position.z = -0.010
+  yearMesh.position.z = -0.012
 
   yearMesh.geometry.rotateX(FACE_ANGLE * Math.PI / 2)
   yearMesh.geometry.rotateY(Math.PI * 2)
@@ -187,7 +187,7 @@ const init = () => {
 
   // USERNAME + YEAR
   let fontLoader = new THREE.FontLoader()
-  fontLoader.load('../fonts/helvetiker_regular.typeface.json', function (response) {
+  fontLoader.load('../fonts/helvetiker_bold.typeface.json', function (response) {
     font = response
     createText()
   })
