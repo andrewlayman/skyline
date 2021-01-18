@@ -204,7 +204,7 @@ const init = () => {
       // Adjust height around distribution of values
       // Needed so that a large day doesn't blow out the scale
       let height = (0).toFixed(4)
-      if (day.count === json.min)
+      if (day.count === json.min && json.min > 0)
       {
         height = MAX_HEIGHT * 0.1
       } else if (day.count > json.min && day.count <= json.p99)
